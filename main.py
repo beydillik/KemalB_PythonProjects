@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas
+
 
 st.set_page_config(layout="wide")
 
@@ -18,5 +20,10 @@ with col2:
     st.info(content)
 
 content = "Bu bölüm deneme amaçlı yazılmıştır, tüm satırı kaplaması amaçlanmıştır."
-st.info(content)
+st.write(content)
+
+col3, col4 = st.columns(2)
+
+with col3:
+    st.write("Bu bölüm deneme amaçlı yazılmıştır, tüm satırı kaplaması amaçlanmıştır.")
 
