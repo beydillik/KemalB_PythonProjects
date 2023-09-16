@@ -24,6 +24,12 @@ st.write(content)
 
 col3, col4 = st.columns(2)
 
-with col3:
-    st.write("Bu bölüm deneme amaçlı yazılmıştır, tüm satırı kaplaması amaçlanmıştır.")
+df=pandas.read_csv("data.csv", sep=";")
 
+with col3:
+    for index, row in df[:10].iterrows():
+        st.header(row["title"])
+
+with col4:
+    for index, row in df[10:].iterrows():
+        st.header(row["title"])
