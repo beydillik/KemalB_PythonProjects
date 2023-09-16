@@ -16,3 +16,7 @@ with col2:
     Started a University Software Engineering program in 2021, learning mainly object-oriented programming and expected to be graduated in 2025.
     """
     st.info(content)
+
+content = "Bu bölüm deneme amaçlı yazılmıştır, tüm satırı kaplaması amaçlanmıştır."
+st.info(content)
+
